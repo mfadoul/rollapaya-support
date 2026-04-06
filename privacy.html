@@ -9,8 +9,10 @@
         body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto; padding: 40px 20px; }
         h1 { color: #FF8C00; border-bottom: 2px solid #FF8C00; padding-bottom: 10px; }
         h2 { color: #444; margin-top: 30px; }
+        h3 { color: #555; margin-top: 24px; }
         .last-updated { color: #777; font-style: italic; margin-bottom: 30px; }
         .data-box { background: #f9f9f9; border-left: 4px solid #FF8C00; padding: 15px; margin: 20px 0; }
+        .notice-box { background: #fef6e7; border-left: 4px solid #FF8C00; padding: 15px; margin: 20px 0 30px; }
         footer { margin-top: 50px; font-size: 0.9em; color: #888; text-align: center; }
         a { color: #FF8C00; text-decoration: none; }
         a:hover { text-decoration: underline; }
@@ -19,7 +21,11 @@
 <body>
 
     <h1>Privacy Policy</h1>
-    <p class="last-updated">Last Updated: March 19, 2026</p>
+    <p class="last-updated">Last Updated: April 5, 2026</p>
+
+    <div class="notice-box">
+        <strong>Version Notice:</strong> Rollapaya support documentation is version-aware. Privacy disclosures differ between <strong>versions 1.1.1 and below</strong> and <strong>versions 1.2 and above</strong>, especially for advertising behavior.
+    </div>
 
     <p>Welcome to <strong>Rollapaya</strong>. This privacy policy explains how <strong>Matthew Fadoul</strong> ("I", "me", or "the Developer") handles data within the Rollapaya iOS application.</p>
 
@@ -28,29 +34,42 @@
 
     <h2>2. Data Collection and Usage</h2>
     <div class="data-box">
-        <strong>App Functionality:</strong> All app settings and configurations are stored locally on your device or in your private iCloud storage. I do not have access to this data.
+        <strong>App Functionality:</strong> Rollapaya stores app settings, saved configurations, and lightweight app state locally on your device, and some of that information may also sync through your personal iCloud account if your Apple device settings allow it. I do not have direct access to that locally stored information.
     </div>
 
+    <p>The app uses local device storage for functionality such as preferences, dice configuration state, and similar in-app convenience features. This site and the app do not require you to create a Rollapaya account.</p>
+
     <h2>3. Third-Party Advertising (Google AdMob)</h2>
-    <p>Rollapaya includes <strong>Google AdMob</strong>-related advertising infrastructure. However, the current launch version of the app <strong>does not currently serve live ads</strong>. The app also <strong>does not currently request App Tracking Transparency (ATT) permission</strong> and does not currently rely on IDFA-based personalized advertising.</p>
+    <h3>Versions 1.1.1 and Below</h3>
+    <p>Rollapaya includes <strong>Google AdMob</strong>-related advertising infrastructure. However, versions <strong>1.1.1 and below do not currently serve live ads</strong>. Those versions also <strong>do not request App Tracking Transparency (ATT) permission</strong> and do not rely on IDFA-based personalized advertising.</p>
 
-    <p>Because Google AdMob code is included in the app, Google’s services and policies remain relevant to the app’s advertising setup. More information is available in <a href="https://policies.google.com/privacy" target="_blank">Google's Privacy Policy</a>.</p>
+    <p>Because Google AdMob code is included in the app, Google’s services and policies remain relevant to the app’s advertising setup. More information is available in <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google's Privacy Policy</a>.</p>
 
-    <p>If live advertising or related data practices change in a future release, this policy will be updated before that release.</p>
-    
-    <p>In accordance with Apple's Privacy Labels, the following data may be collected by the AdMob SDK:</p>
+    <h3>Versions 1.2 and Above</h3>
+    <p>Versions <strong>1.2 and above</strong> use version-specific ad behavior:</p>
+    <ul>
+        <li><strong>Simulator builds:</strong> placeholder ad surfaces only; no live ads are requested or shown.</li>
+        <li><strong>Debug builds on physical devices:</strong> Google AdMob test configuration may be used so that test ads can be requested during development and QA.</li>
+        <li><strong>Release and App Store builds:</strong> production AdMob app IDs and banner ad unit IDs may be used so that real ads can be requested and displayed.</li>
+    </ul>
+
+    <p>For versions 1.2 and above, the current disclosure plan remains <strong>non-tracking advertising</strong>. Rollapaya <strong>does not currently request ATT permission</strong>, does not use IDFA-based personalized advertising, and does not intentionally track your activity across other companies' apps or websites unless that product decision changes in a future release.</p>
+
+    <p>When AdMob is active, Google's SDK and related services may process data needed to deliver ads, prevent fraud, measure performance, and support diagnostics. In accordance with Apple's Privacy Labels, the following categories may be collected by the AdMob SDK:</p>
     <ul>
         <li><strong>Identifiers:</strong> Device ID.</li>
         <li><strong>Usage Data:</strong> Product interactions and advertising data.</li>
         <li><strong>Diagnostics:</strong> Crash logs and performance metrics to ensure stability.</li>
-        <li><strong>Location:</strong> Coarse/Approximate location (derived from IP address).</li>
+        <li><strong>Location:</strong> Coarse or approximate location derived from IP address.</li>
     </ul>
 
+    <p>If advertising behavior or related data practices change in a future release, this policy will be updated before or with that release.</p>
+
     <h2>4. App Tracking Transparency (ATT)</h2>
-    <p>Rollapaya <strong>does not currently request ATT permission</strong>, and the app does not currently track your activity across other apps or websites. If this changes in a future release, this policy will be updated before that release.</p>
+    <p>Across both version ranges covered by this page, Rollapaya <strong>does not currently request ATT permission</strong>, and the app does not currently track your activity across other apps or websites. If that changes in a future release, this policy will be updated before or with that release.</p>
 
     <h2>5. GDPR and International Rights</h2>
-    <p>For users in the European Economic Area (EEA) and the UK, I use a <strong>Consent Management Platform (UMP)</strong> to support applicable consent requirements for advertising. You have the right to withdraw your consent at any time via the in-app settings.</p>
+    <p>For users in the European Economic Area (EEA) and the UK, versions that use advertising-related features may use a <strong>Consent Management Platform (UMP)</strong> to support applicable consent requirements. Where consent choices are presented in-app, you have the right to withdraw your consent at any time via the available in-app settings.</p>
 
     <h2>6. Children's Privacy</h2>
     <p>Rollapaya does not knowingly collect data from children under the age of 13. AdMob is configured to respect "Tag for Under Age of Consent" (TFUA) settings where applicable.</p>
