@@ -21,7 +21,7 @@ Set your production support URL here after deployment:
 The support site keeps stable public URLs while documenting two app behavior ranges:
 
 - `Versions 1.1.1 and below`: legacy guidance preserved from the original launch documentation.
-- `Versions 1.2 and above`: current guidance for placeholder ads in Simulator, AdMob test ads in debug builds on physical devices, and production ads in release or App Store builds.
+- `Versions 1.2 and above`: current guidance for the App Store version of the app, which may use production AdMob to request and display real ads under the non-tracking and no-ATT model.
 
 Current disclosure direction:
 
