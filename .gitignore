@@ -1,0 +1,21 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*~
+
+# GitHub Pages / Jekyll local builds
+_site/
+.jekyll-cache/
+.sass-cache/
+
+# Local AI assistant settings
+.claude/
